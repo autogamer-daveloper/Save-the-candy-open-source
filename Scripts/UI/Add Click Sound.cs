@@ -4,6 +4,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class AddClickSound : MonoBehaviour
 {
+    /* Этот скрипт добавляет на все кнопки на сцене звуковой эффект. */
+
     [Header ("Settings - click sound")]
     [SerializeField] private AudioClip click;
 

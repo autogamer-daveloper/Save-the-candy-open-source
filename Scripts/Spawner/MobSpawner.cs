@@ -4,6 +4,9 @@ using TMPro;
 
 public class MobSpawner : MonoBehaviour
 {
+    /* Это спавнер мобов, тут они прокачиваются и всё в таком духе. Когда ты прокачиваешь врагов, ты не сделаешь моментально сильнее,
+    ты просто начнёшь спавнить мобов с более сильными параметрами. */
+
     [Header ("Settings - spawn")]
     [SerializeField] private GameObject mob;
     [SerializeField] private GameObject eliteMob;

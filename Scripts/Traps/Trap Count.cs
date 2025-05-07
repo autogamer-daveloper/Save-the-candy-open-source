@@ -4,6 +4,8 @@ using TMPro;
 
 public class TrapCount : MonoBehaviour
 {
+    /* Этот скрипт отвечает за количество ловушек на уровне. */
+
     [Header ("Settings - traps")]
     [SerializeField] private GameObject[] trap = new GameObject[5]; /* НЕ РЕДАКТИРОВАТЬ ДЛИНУ МАССИВА В ИНСПЕКТОРЕ! ПОЖАЛУЙСТА*/
     [SerializeField] private GameObject button;

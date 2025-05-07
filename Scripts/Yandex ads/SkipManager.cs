@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(MainHealth))]
 public class SkipManager : MonoBehaviour
 {
+    /* Дополнение к скрипту SkipEnemiesAd */
+
     private SkipEnemiesAd adManager;
 
     private void Start()
@@ -18,7 +20,7 @@ public class SkipManager : MonoBehaviour
         int _trapDamage = strogare.ProgressTrapDamageAndSpeed;
         int _enemyLevel = strogare.ProgressMobSpawnAndMovement;
 
-        if(_trapCount >= 4 && _trapDamage >= 4 && _enemyLevel >= 4)
+        if(_trapCount >= 5 && _trapDamage >= 5 && _enemyLevel >= 5)
         {
             adManager.Show_Skip_Button();
         }

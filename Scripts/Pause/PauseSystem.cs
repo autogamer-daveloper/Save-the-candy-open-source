@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class PauseSystem : MonoBehaviour
 {
+    /* Система паузы, которая не завязана на Time.timeScale = 0. По этой причине анимации не останавливаются, что делает игру чуточку живее.
+    Пауза через Time.timeScale = 0 будет корректно работать только в том случае, если вы не используете анимации, а они зачастую завязаны на
+    timeScale, который вы обычно выкручиваете в 0, что не есть хорошо. */
+
     [Header ("Settings - pause")]
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private MobSpawner spawner;

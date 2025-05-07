@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 namespace TranslateEasyIntegration
 {
+    /* Это мой немного изменённый скрипт из одного гайда на перевод игры на ютубе. @A-GAMES-STUDIO */
+
     [AddComponentMenu ("Translate/Select Language Script", 0)]
     public class SelectLanguage : MonoBehaviour
     {

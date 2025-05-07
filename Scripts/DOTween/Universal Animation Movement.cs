@@ -3,6 +3,8 @@ using DG.Tweening;
 
 public class UniversalAnimationMovement : MonoBehaviour
 {
+    /* Этот универсальный код используется для старта и конца анимации RectTransform на основе DOTween */
+
     [Header("Settings - transform")]
     [SerializeField] private Vector2 finalPosition;
     [Range(0.1f, 5f)]

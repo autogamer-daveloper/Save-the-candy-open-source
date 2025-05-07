@@ -4,6 +4,8 @@ using TMPro;
 
 public class ShowCandies : MonoBehaviour
 {
+    /* Этот скрипт показывает сколько у вас конфеток на данный момент. (По вызову Initialize) */
+
     private TMP_Text _text;
     
     private void Start()

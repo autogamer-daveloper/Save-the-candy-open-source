@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class HealthEnemy : MonoBehaviour
 {
+    /* В этом скрипте просчитывается логика потери здоровья врага, а также прокачка урона по нему */
+
     [SerializeField] private GameObject healthBar;
     [SerializeField] private string TrapTag = "Trap";
 

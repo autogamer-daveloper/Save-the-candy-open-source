@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class DoubleClickLock : MonoBehaviour
 {
+    /* Защита от дабл-клика на кнопке, на которую вы повесили этот скрипт. */
+
     private Button button;
 
     private void Start()

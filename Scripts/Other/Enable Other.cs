@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnableOther : MonoBehaviour
 {
+    /* Какая-то чушь, но отвечающая за включение другого объекта, если этот включен и наоборот. */
+
     [SerializeField] private GameObject[] obj;
 
     private void OnEnable()

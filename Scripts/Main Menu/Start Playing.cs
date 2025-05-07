@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class StartPlaying : MonoBehaviour
 {
+    /* Скрипт, который выполняет определённую логику при первом старте игры (Учитывая PlayerPrefs) */
+
     [Header ("Settings - first start")]
     [SerializeField] private GameObject panelLanguage;
     [SerializeField] private GameObject panelWarning;

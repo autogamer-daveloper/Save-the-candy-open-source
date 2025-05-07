@@ -7,6 +7,11 @@ using DG.Tweening;
 [RequireComponent (typeof(AudioSource))]
 public class MusicController : MonoBehaviour
 {
+    /* Это музыкальный контроллер, который меняет треки после того, как трек либо закончился, либо
+    сменилась сцена. Объект с этим скриптом не удалиться после смены сцены. Поэтому лучше не ссылаться
+    на объект с этим скриптом, поскольку объекты из DontDestroyOnLoad не могут быть связаны с объектами
+    в обычной сцене. Ещё этот контроллер связан с громкостью, которая находиться автоматически по тегу.*/
+
     [Header ("Settings - music")]
     [SerializeField] private AudioClip[] audioClips; /* гибкая настройка треков */
     [SerializeField] private float speed = 0.5f;

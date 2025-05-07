@@ -6,6 +6,8 @@ using TMPro;
 
 namespace TranslateEasyIntegration
 {
+    /* Это мой немного изменённый скрипт из одного гайда на перевод игры на ютубе. @A-GAMES-STUDIO */
+
     [AddComponentMenu("Translate/TextMeshPro", 2)]
     public class TranslateTMP : MonoBehaviour
     {

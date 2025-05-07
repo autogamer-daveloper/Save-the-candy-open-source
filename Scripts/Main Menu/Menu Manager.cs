@@ -4,6 +4,8 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
+    /* Скрипт для контроля главного меню */
+
     [Header ("Settings - menu")]
     [Space (5)]
     [Header ("UI")]

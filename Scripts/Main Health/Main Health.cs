@@ -5,6 +5,9 @@ using TMPro;
 
 public class MainHealth : MonoBehaviour
 {
+    /* Этот скрипт проверяет твоё игровое здоровье, кол-во убитых персонажей, а также обновляет UI и просчитывает
+    победил ли ты, или проиграл.*/
+
     [Header ("Settings - your health")]
     [SerializeField] private int yourHealth;
     [SerializeField] private Slider healthBar;

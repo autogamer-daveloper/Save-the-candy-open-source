@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class UniversalStartAnimationOnEnable : MonoBehaviour
 {
+    /* Аткивирует выбранный DOTween аниматор автоматически */
+
     private UniversalAnimationMovement that;
 
     private void OnEnable()

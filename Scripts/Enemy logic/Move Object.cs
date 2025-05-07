@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
+    /* Этот скрипт заставляет идти объект, на котором висит */
+
     public float Speed;
 
     [SerializeField] private float finalPositionZ = -50;

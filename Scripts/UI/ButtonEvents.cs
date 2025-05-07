@@ -6,6 +6,8 @@ public class ButtonEvents : MonoBehaviour,
     IPointerEnterHandler,
     IPointerExitHandler
 {
+    /* Этот скрипт добавляет плавную анимацию уменьшение и увеличение кнопки при наводке с помощью DOTween плагина. */
+
     [Header ("Setting - this button scaling")]
     [Range (0.1f, 2f)]
     [SerializeField] private float scaleMultiplier = 0.9f;

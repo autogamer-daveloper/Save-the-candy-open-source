@@ -4,6 +4,8 @@ using YG;
 
 public class SkipEnemiesAd : MonoBehaviour
 {
+    /* Этот скрипт отвечает за пропуск уровня при полной прокачке */
+
     [Header ("Settings - ads")]
     [SerializeField] private YandexGame sdk;
     [SerializeField] private Button button;

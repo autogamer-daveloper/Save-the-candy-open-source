@@ -4,6 +4,8 @@ using TMPro;
 
 public class TrapDamage : MonoBehaviour
 {
+    /* Этот скрипт отвечает за урон у ловушек, и если есть анимация, то и за скорость анимации. */
+
     [Header ("Settings - trap damage")]
     [SerializeField] private MobSpawner Spawner;
     [SerializeField] private TMP_Text price;
