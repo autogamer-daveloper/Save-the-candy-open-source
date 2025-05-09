@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using YG;
+using System.Threading.Tasks;
 
 public class MobSpawner : MonoBehaviour
 {
@@ -82,8 +84,12 @@ public class MobSpawner : MonoBehaviour
         float tmp_price = eiler.EilerCounting(tmp_priceStart, _level, (hardScript.IsHardMode ? 2.7f : 1.5f));
         _price = Mathf.RoundToInt(tmp_price);
 
-        if (_level < _maxLevel) price.text = _price.ToString();
-        else price.text = "Max";
+        if (_level < _maxLevel) {
+            price.text = _price.ToString();
+        }
+        else {
+            price.text = "";
+        }
     }
 
     private void Button_Initialization()
@@ -96,15 +102,13 @@ public class MobSpawner : MonoBehaviour
 
         _button.onClick.AddListener(Upgrade_Enemies);
 
-        if(_level >= _maxLevel)
-        {
-            _button.interactable = false;
-            _buttonImage.color = _disable;
-        }
-        else
-        {
+        if (_level < _maxLevel) {
             _button.interactable = true;
             _buttonImage.color = _enable;
+        }
+        else {
+            _button.interactable = false;
+            _buttonImage.color = _disable;
         }
     }
 
@@ -123,6 +127,7 @@ public class MobSpawner : MonoBehaviour
         }
 
         Initialize();
+        Button_Initialization();
     }
 
 #endregion

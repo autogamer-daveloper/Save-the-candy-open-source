@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using YG;
+using System.Threading.Tasks;
 
 public class TrapDamage : MonoBehaviour
 {
@@ -30,9 +32,11 @@ public class TrapDamage : MonoBehaviour
     private Color _enable;
     private Color _disable;
 
+    private string _lang = "Max";
+
     private void Awake()
     {
-        Initialize_Button();
+        Button_Initialization();
     }
 
     private void Start()
@@ -61,11 +65,15 @@ public class TrapDamage : MonoBehaviour
         float tmp_price = eiler.EilerCounting(tmp_priceStart, _level, (hardScript.IsHardMode ? 2.7f : 1.5f));
         _price = Mathf.RoundToInt(tmp_price);
 
-        if (_level < _maxLevel) price.text = _price.ToString();
-        else price.text = "Max";
+        if (_level < _maxLevel) {
+            price.text = _price.ToString();
+        }
+        else {
+            price.text = "";
+        }
     }
 
-    private void Initialize_Button()
+    private void Button_Initialization()
     {
         _enable = preset.Enable;
         _disable = preset.Disable;
@@ -75,15 +83,13 @@ public class TrapDamage : MonoBehaviour
 
         _button.onClick.AddListener(Upgrade_Traps_And_Speed);
 
-        if(_level >= _maxLevel)
-        {
-            _button.interactable = false;
-            _buttonImage.color = _disable;
-        }
-        else
-        {
+        if (_level < _maxLevel) {
             _button.interactable = true;
             _buttonImage.color = _enable;
+        }
+        else {
+            _button.interactable = false;
+            _buttonImage.color = _disable;
         }
     }
 
@@ -118,6 +124,17 @@ public class TrapDamage : MonoBehaviour
 
         Initialize();
         Spawner.Initialize();
+        Button_Initialization();
+    }
+
+#endregion
+
+#region Change MAX word
+
+    internal void Change_Max_Word(string word)
+    {
+        _lang = word;
+        Count_Price();
     }
 
 #endregion

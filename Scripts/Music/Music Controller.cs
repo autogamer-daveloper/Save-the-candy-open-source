@@ -97,13 +97,15 @@ public class MusicController : MonoBehaviour
 
     private void Change_Music()
     {
+        CancelInvoke(nameof(Change_Music));
+
         _musicVolume = audioSrc.DOFade(0, speed).OnComplete(() => {
             int rand = Select_Clip();
             audioSrc.clip = audioClips[rand];
             audioSrc.Play();
 
             _musicVolume = audioSrc.DOFade(volume, speed).OnComplete(() => {
-                Invoke(nameof(Change_Music), audioSrc.clip.length);
+                Invoke(nameof(Change_Music), audioClips[rand].length);
             });
         });
     }

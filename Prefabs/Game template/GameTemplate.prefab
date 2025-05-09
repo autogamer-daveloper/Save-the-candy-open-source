@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 588773549477030397}
   - component: {fileID: 2214831712950264568}
   - component: {fileID: 1920413327723776407}
-  - component: {fileID: 8202261636386152214}
+  - component: {fileID: 7318548896819388614}
   m_Layer: 5
   m_Name: Header
   m_TagString: Untagged
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8202261636386152214
+--- !u!114 &7318548896819388614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -238,15 +238,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 264614338859429588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - You losed
-  - "\u041F\u0440\u043E\u0438\u0433\u0440\u044B\u0448"
+  textMPComponent: {fileID: 1920413327723776407}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u0422\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B"
+  en: You losed
+  tr: Kaybettin
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u0412\u0438 \u043B\u043E\u0432\u0438\u043B\u0438"
+  uz: Siz yotasiz
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: Sie haben verloren
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &270945632681655039
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +292,7 @@ GameObject:
   - component: {fileID: 2114010617322132806}
   - component: {fileID: 3425791963273196975}
   - component: {fileID: 8933500825843898487}
-  - component: {fileID: 7452483021428297414}
+  - component: {fileID: 1294253090805981975}
   m_Layer: 5
   m_Name: Header
   m_TagString: Untagged
@@ -384,7 +418,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7452483021428297414
+--- !u!114 &1294253090805981975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,15 +427,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 270945632681655039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - You won
-  - "\u041F\u043E\u0431\u0435\u0434\u0430"
+  textMPComponent: {fileID: 8933500825843898487}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041F\u043E\u0431\u0435\u0434\u0430"
+  en: You won
+  tr: "Kazand\u0131n"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u0412\u0438 \u0432\u0438\u0433\u0440\u0430\u043B\u0438"
+  uz: Siz yutdingiz
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: Du hast gewonnen
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &367191322395077943
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,7 +919,7 @@ GameObject:
   - component: {fileID: 4099925411730364223}
   - component: {fileID: 1196121761932637267}
   - component: {fileID: 3317949494556373869}
-  - component: {fileID: 8128576130782226422}
+  - component: {fileID: 5072612639555931967}
   m_Layer: 5
   m_Name: Header
   m_TagString: Untagged
@@ -977,7 +1045,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8128576130782226422
+--- !u!114 &5072612639555931967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -986,15 +1054,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 536921313396833809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Pause
-  - "\u041F\u0430\u0443\u0437\u0430"
+  textMPComponent: {fileID: 3317949494556373869}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041F\u0430\u0443\u0437\u0430"
+  en: Pause
+  tr: Duraklamak
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u041F\u0430\u0443\u0437\u0430"
+  uz: Pauza
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: Pause
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &566951112427511655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1858,7 @@ GameObject:
   - component: {fileID: 8030419343149738244}
   - component: {fileID: 5102719845066950734}
   - component: {fileID: 622373747019616313}
-  - component: {fileID: 6349898704450618658}
+  - component: {fileID: 4694118838941893615}
   m_Layer: 5
   m_Name: Text (Name)
   m_TagString: Untagged
@@ -1838,8 +1940,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1882,7 +1984,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6349898704450618658
+--- !u!114 &4694118838941893615
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1891,15 +1993,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 1087061319630342671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Upgrade traps
-  - "+ \u0443\u0440\u043E\u043D"
+  textMPComponent: {fileID: 622373747019616313}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u043B\u043E\u0432\u0443\u0448\u0435\u043A"
+  en: Upgrade traps
+  tr: "Tuzaklar\u0131 y\xFCkselt"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u041E\u043D\u043E\u0432\u043B\u0435\u043D\u043D\u044F \u043F\u0430\u0441\u0442\u043E\u043A"
+  uz: Tuzoqlarni yangilash
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: "Upgrade -Fallen aufr\xFCsten"
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &1115739799227573324
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,7 +3272,7 @@ GameObject:
   - component: {fileID: 1174358686595538270}
   - component: {fileID: 2130739639222342817}
   - component: {fileID: 6468344023655029717}
-  - component: {fileID: 3716977401075906587}
+  - component: {fileID: 5497591302588133964}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -3262,7 +3398,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &3716977401075906587
+--- !u!114 &5497591302588133964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3271,16 +3407,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 2646717680966564480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - In the next wave the enemies will be stronger.
-  - "\u0412 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u0432\u043E\u043B\u043D\u0435
-    \u0432\u0440\u0430\u0433\u0438 \u0431\u0443\u0434\u0443\u0442 \u0441\u0438\u043B\u044C\u043D\u0435\u0435"
+  textMPComponent: {fileID: 6468344023655029717}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041D\u0430 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439 \u0432\u043E\u043B\u043D\u0435
+    \u0432\u0440\u0430\u0433\u0438 \u0431\u0443\u0434\u0443\u0442 \u0441\u0438\u043B\u044C\u043D\u0435\u0435."
+  en: In the next wave the enemies will be stronger.
+  tr: "Bir sonraki dalgada d\xFC\u015Fmanlar daha g\xFC\xE7l\xFC olacak."
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u0423 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0456\u0439 \u0445\u0432\u0438\u043B\u0456
+    \u0432\u043E\u0440\u043E\u0433\u0438 \u0431\u0443\u0434\u0443\u0442\u044C \u0441\u0438\u043B\u044C\u043D\u0456\u0448\u0438\u043C\u0438."
+  uz: Keyingi to'lqinda dushmanlar kuchliroq bo'ladi.
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: "In der n\xE4chsten Welle werden die Feinde st\xE4rker sein."
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &2764420432011703263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,7 +3951,7 @@ GameObject:
   - component: {fileID: 116253542360323824}
   - component: {fileID: 570908368585644072}
   - component: {fileID: 410703409671109059}
-  - component: {fileID: 1532738954253650272}
+  - component: {fileID: 2439771886191574634}
   m_Layer: 5
   m_Name: Candies_Int
   m_TagString: Untagged
@@ -3906,7 +4077,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1532738954253650272
+--- !u!114 &2439771886191574634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3915,15 +4086,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 3428950426975887782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Pause
-  - "\u041F\u0430\u0443\u0437\u0430"
+  textMPComponent: {fileID: 410703409671109059}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041F\u0430\u0443\u0437\u0430"
+  en: Pause
+  tr: Duraklamak
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u041F\u0430\u0443\u0437\u0430"
+  uz: Pauza
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: Pause
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &3474693455437478437
 GameObject:
   m_ObjectHideFlags: 0
@@ -4153,7 +4358,7 @@ GameObject:
   - component: {fileID: 7034313752631646569}
   - component: {fileID: 2603098436117952569}
   - component: {fileID: 8511668593982521478}
-  - component: {fileID: 7341983031528560587}
+  - component: {fileID: 4340780284385698522}
   m_Layer: 5
   m_Name: Text (Name)
   m_TagString: Untagged
@@ -4235,8 +4440,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4279,7 +4484,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7341983031528560587
+--- !u!114 &4340780284385698522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4288,15 +4493,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 3667287131676608310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Add trap
-  - "+ \u043B\u043E\u0432\u0443\u0448\u043A\u0430"
+  textMPComponent: {fileID: 8511668593982521478}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u043B\u043E\u0432\u0443\u0448\u043A\u0443"
+  en: Add trap
+  tr: Tuzak ekle
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u0414\u043E\u0434\u0430\u0442\u0438 \u043F\u0430\u0441\u0442\u043A\u0443"
+  uz: Tuzoq qo'shing
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: "Falle hinzuf\xFCgen"
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &3707373931901879625
 GameObject:
   m_ObjectHideFlags: 0
@@ -4400,7 +4639,7 @@ GameObject:
   - component: {fileID: 2469228367175162464}
   - component: {fileID: 8190582659972061157}
   - component: {fileID: 2192890859507201833}
-  - component: {fileID: 8499219873210681124}
+  - component: {fileID: 977715620016560815}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -4526,7 +4765,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8499219873210681124
+--- !u!114 &977715620016560815
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4535,15 +4774,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 3938739819323581717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Game paused.
-  - "\u0418\u0433\u0440\u0430 \u043D\u0430 \u043F\u0430\u0443\u0437\u0435"
+  textMPComponent: {fileID: 2192890859507201833}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u0418\u0433\u0440\u0430 \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u0430."
+  en: Game paused.
+  tr: "Oyun duraklad\u0131."
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u0413\u0440\u0430 \u0437\u0440\u043E\u0431\u0438\u043B\u0430 \u043F\u0430\u0443\u0437\u0443."
+  uz: O'yin to'xtadi.
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: Spiel machte eine Pause.
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &4090572944542022652
 GameObject:
   m_ObjectHideFlags: 0
@@ -6002,7 +6275,7 @@ GameObject:
   - component: {fileID: 7648940218914351160}
   - component: {fileID: 5055690052680535924}
   - component: {fileID: 5617310140150974241}
-  - component: {fileID: 6366737850484346527}
+  - component: {fileID: 5028641857774788198}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -6128,7 +6401,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6366737850484346527
+--- !u!114 &5028641857774788198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6137,17 +6410,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 6335505570149365976}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Think carefully about your pumping tactics. And repeat the wave again.
-  - "\u041F\u043E\u0434\u0443\u043C\u0430\u0439 \u043E \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0438\u0438
-    \u043F\u0440\u043E\u043A\u0430\u0447\u043A\u0438 \u0438 \u043F\u0440\u043E\u0439\u0434\u0438
-    \u044D\u0442\u0443 \u0432\u043E\u043B\u043D\u0443 \u0441\u043D\u043E\u0432\u0430."
+  textMPComponent: {fileID: 5617310140150974241}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u0422\u0449\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435
+    \u043E \u0441\u0432\u043E\u0435\u0439 \u0442\u0430\u043A\u0442\u0438\u043A\u0435
+    \u043F\u0440\u043E\u043A\u0430\u0447\u043A\u0438. "
+  en: Think carefully about your pumping tactics. And repeat the wave again.
+  tr: "Pompalama taktiklerinizi dikkatlice d\xFC\u015F\xFCn\xFCn. "
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u0420\u0435\u0442\u0435\u043B\u044C\u043D\u043E \u043F\u043E\u0434\u0443\u043C\u0430\u0439\u0442\u0435
+    \u043F\u0440\u043E \u0441\u0432\u043E\u044E \u0442\u0430\u043A\u0442\u0438\u043A\u0443
+    \u043F\u0440\u043E\u043A\u0430\u0447\u0443\u0432\u0430\u043D\u043D\u044F. "
+  uz: 'Pastki taktikangiz haqida yaxshilab o''ylab ko''ring. '
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: "Denken Sie sorgf\xE4ltig \xFCber Ihre Pumptaktik nach. "
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &6415987050422389975
 GameObject:
   m_ObjectHideFlags: 0
@@ -7333,7 +7642,7 @@ GameObject:
   - component: {fileID: 3562137292254840485}
   - component: {fileID: 5148804551942816234}
   - component: {fileID: 3158296206254415579}
-  - component: {fileID: 347615968976023423}
+  - component: {fileID: 6093935440971792971}
   m_Layer: 5
   m_Name: Text (Name)
   m_TagString: Untagged
@@ -7415,8 +7724,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7459,7 +7768,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &347615968976023423
+--- !u!114 &6093935440971792971
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7468,15 +7777,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 7634895501239646006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Upgrade enemies
-  - "+ \u0432\u0440\u0430\u0433\u0438"
+  textMPComponent: {fileID: 3158296206254415579}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u0438\u0435 \u0432\u0440\u0430\u0433\u043E\u0432"
+  en: Upgrade enemies
+  tr: "D\xFC\u015Fmanlar\u0131 Y\xFCkselt"
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u041E\u043D\u043E\u0432\u0456\u0442\u044C \u0432\u043E\u0440\u043E\u0433\u0456\u0432"
+  uz: Dushmanlarni yangilash
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: Feinde verbessern
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &7641714687206866437
 GameObject:
   m_ObjectHideFlags: 0
@@ -8048,7 +8391,7 @@ GameObject:
   - component: {fileID: 752745327084763017}
   - component: {fileID: 8624554874483940370}
   - component: {fileID: 4566619577196202130}
-  - component: {fileID: 9020579303862773383}
+  - component: {fileID: 6440123789180679264}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8103,7 +8446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Skip level
+  m_text: Skip
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -8174,7 +8517,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &9020579303862773383
+--- !u!114 &6440123789180679264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8183,15 +8526,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 8102135715070630408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb04d73018179c247acc2a5f3ebda698, type: 3}
+  m_Script: {fileID: 11500000, guid: f34f36451b093ee4c83ad4aa5459d2ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lang:
-  - eng
-  - rus
-  texts:
-  - Skip level
-  - "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u044C"
+  textMPComponent: {fileID: 4566619577196202130}
+  uniqueFontTMP: {fileID: 0}
+  textLComponent: {fileID: 0}
+  infoYG: {fileID: 11400000, guid: 162644796a8b0d044bce3d6fda0641e3, type: 2}
+  text: 
+  ru: "\u041F\u0440\u043E\u043F\u0443\u0441\u043A\u0430\u0442\u044C"
+  en: Skip
+  tr: Atlamak
+  az: 
+  be: 
+  he: 
+  hy: 
+  ka: 
+  et: 
+  fr: 
+  kk: 
+  ky: 
+  lt: 
+  lv: 
+  ro: 
+  tg: 
+  tk: 
+  uk: "\u041F\u0440\u043E\u043F\u0443\u0441\u0442\u0438\u0442\u0438"
+  uz: O'tkazib yubormoq
+  es: 
+  pt: 
+  ar: 
+  id: 
+  ja: 
+  it: 
+  de: "\xDCberspringen"
+  hi: 
+  changeOnlyFont: 0
+  fontNumber: 0
+  uniqueFont: {fileID: 0}
+  additionalText: {fileID: 0}
+  textHeight: 20
+  processTranslateLabel: 6/6 completed
+  componentTextField: 1
+  countLang: 6
 --- !u!1 &8374859555442541446
 GameObject:
   m_ObjectHideFlags: 0
@@ -8897,6 +9274,7 @@ MonoBehaviour:
   eliteMob: {fileID: 787620949618457501, guid: a4adb5c3ce4000441814345598336a62, type: 3}
   timer: 1
   RewardUpscaler: 1
+  priceStart: 7
   button: {fileID: 1009666040257466240}
   preset: {fileID: 11400000, guid: 282164eb4417ff242b0f5d7556b5341d, type: 2}
   price: {fileID: 8052728218297331540}
@@ -8956,6 +9334,7 @@ MonoBehaviour:
   button: {fileID: 2139187773889445909}
   price: {fileID: 961473058764469413}
   preset: {fileID: 11400000, guid: 282164eb4417ff242b0f5d7556b5341d, type: 2}
+  priceStart: 10
   hardScript: {fileID: 7787524480393350112}
 --- !u!114 &2475991408678044369
 MonoBehaviour:
@@ -8980,6 +9359,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  priceStart: 5
   hardScript: {fileID: 7787524480393350112}
 --- !u!1 &9169651855426725285
 GameObject:

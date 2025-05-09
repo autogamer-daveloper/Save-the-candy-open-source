@@ -71,14 +71,12 @@ public class HealthEnemy : MonoBehaviour
         _levelEnemy = strogare.ProgressMobSpawnAndMovement;
         _levelDamage = strogare.ProgressTrapDamageAndSpeed;
         _level = strogare.ProgressLevel;
-
-        Count_Damage_Scaling();
-        Count_Main_Ints();
     }
 
     private void Count_Damage_Scaling()
     {
-        _damageScaler = Mathf.Pow(1.25f, _levelDamage);
+        _damageScaler = Mathf.Pow(1.5f, _levelDamage);
+        Count_Main_Ints();
     }
 
     private void Count_Main_Ints()
@@ -109,6 +107,7 @@ public class HealthEnemy : MonoBehaviour
     {
         if(_isTrapped)
         {
+            Count_Damage_Scaling();
             Get_Hit(_damage);
         }
     }

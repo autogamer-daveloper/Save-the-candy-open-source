@@ -29,13 +29,14 @@ public class UniversalAnimationMovement : MonoBehaviour
     {
         DOTween.KillAll();
 
-        rectTransform = GetComponent<RectTransform>();
+        rectTransform = gameObject.GetComponent<RectTransform>();
         startPosition = rectTransform.anchoredPosition;
     }
 
     public void Show_And_Enable()
     {
         if (rectTransform == null) return;
+
         gameObject.SetActive(true);
 
         tween = rectTransform.DOAnchorPos(finalPosition, timer).OnComplete(() =>

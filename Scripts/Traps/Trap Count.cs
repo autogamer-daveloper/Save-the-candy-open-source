@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using YG;
+using System.Threading.Tasks;
 
 public class TrapCount : MonoBehaviour
 {
@@ -23,11 +25,13 @@ public class TrapCount : MonoBehaviour
 
     private PlayerPrefsStorgare _strogare;
 
-    private int _trapCountLevel;
+    private int _level;
     private int _levelLocation;
     private int _price;
 
     private int _maxLevel = 5;
+    
+    private string _lang = "Max";
 
     private void Awake()
     {
@@ -45,10 +49,27 @@ public class TrapCount : MonoBehaviour
     private void Initialize()
     {
         _strogare = new PlayerPrefsStorgare();
-        _trapCountLevel = _strogare.ProgressTrapCount;
+        _level = _strogare.ProgressTrapCount;
         _levelLocation = _strogare.ProgressLevel;
 
         Count_Price();
+    }
+
+    private void Count_Price()
+    {
+        var eiler = new EilerFormula();
+
+        float tmp_priceStart = eiler.EilerCounting((float)priceStart, _levelLocation, (hardScript.IsHardMode ? 2.7f : 1.5f));
+
+        float tmp_price = eiler.EilerCounting(tmp_priceStart, _level, (hardScript.IsHardMode ? 2.7f : 1.5f));
+        _price = Mathf.RoundToInt(tmp_price);
+
+        if (_level < _maxLevel) {
+            price.text = _price.ToString();
+        }
+        else {
+            price.text = "";
+        }
     }
 
     private void Button_Initialization()
@@ -61,29 +82,14 @@ public class TrapCount : MonoBehaviour
 
         _button.onClick.AddListener(Add_New_Trap);
 
-        if(_trapCountLevel >= _maxLevel)
-        {
-            _button.interactable = false;
-            _buttonImage.color = _disable;
-        }
-        else
-        {
+        if (_level < _maxLevel) {
             _button.interactable = true;
             _buttonImage.color = _enable;
         }
-    }
-
-    private void Count_Price()
-    {
-        var eiler = new EilerFormula();
-
-        float tmp_priceStart = eiler.EilerCounting((float)priceStart, _levelLocation, (hardScript.IsHardMode ? 2.7f : 1.5f));
-
-        float tmp_price = eiler.EilerCounting(tmp_priceStart, _trapCountLevel, (hardScript.IsHardMode ? 2.7f : 1.5f));
-        _price = Mathf.RoundToInt(tmp_price);
-
-        if (_trapCountLevel < _maxLevel) price.text = _price.ToString();
-        else price.text = "Max";
+        else {
+            _button.interactable = false;
+            _buttonImage.color = _disable;
+        }
     }
 
 #endregion
@@ -104,13 +110,14 @@ public class TrapCount : MonoBehaviour
 
         Initialize();
         Check_Traps();
+        Button_Initialization();
     }
 
     private void Check_Traps()
     {
         for(int i = 0; i < trap.Length; i++)
         {
-            if(i < _trapCountLevel)
+            if(i < _level)
             {
                 trap[i].SetActive(true);
             }
@@ -119,6 +126,16 @@ public class TrapCount : MonoBehaviour
                 trap[i].SetActive(false);
             }
         }
+    }
+
+#endregion
+
+#region Change MAX word
+
+    internal void Change_Max_Word(string word)
+    {
+        _lang = word;
+        Count_Price();
     }
 
 #endregion
